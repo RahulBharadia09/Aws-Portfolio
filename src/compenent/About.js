@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -54,9 +55,9 @@ const About = () => {
           </div>
           <div className="col-7">
             <div className="fontcolor">
-              <a className="intern" href="/"><p>
+              <Link className="intern" to="/"><p>
                 Envision Training Institute, Pune
-              </p></a>
+              </p></Link>
             </div>
           </div>
         </div>

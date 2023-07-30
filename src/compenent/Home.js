@@ -1,5 +1,5 @@
 import React from "react";
-import rahul2 from "../Images/1O5A6247 copy.jpg";
+import rahul2 from "../Images/WhatsApp Image 2023-07-29 at 5.01.56 PM.jpeg";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="bg2 py-3">
       <Container>
-        <div>
-          <div className="row justify-content-center align-items-center ">
+        
+          <div className="row justify-content-center align-items-center section">
             <div className="col-12 col-lg-8 text-center  ">
               <div className=" top-margin align-items-center">
                 <h4 style={{ color: "#B4BECC" }}>Welcome to my world</h4>
@@ -30,17 +30,17 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-sm-12 col-lg-4 text-center b21 ">
+            <div className="col-sm-12 col-lg-4  b21 ">
               <img
                 src={rahul2}
-                alt="mineimage"
-                className=" img-fluid"
-                width="90%"
-                height="70%"
+                alt="Rahul_Bharadia"
+                className=" homeimg img-fluid"
+                width="100%"
+                height="100%"
               />
             </div>
           </div>
-        </div>
+       
       </Container>
     </div>
   );

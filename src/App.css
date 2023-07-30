@@ -200,6 +200,10 @@ color: #767676;
   text-decoration: none;
 }
 
+.homeimg{
+  margin-top: 22%;
+}
+
 iframe{
   width: 650px;
   height: 550px;

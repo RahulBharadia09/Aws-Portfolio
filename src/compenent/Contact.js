@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 
 
 const Contact = () => {
+
+
+
   function Submit(e) {
+    
     const userDetails = document.querySelector("form");
     e.preventDefault();
     const formData = new FormData(userDetails);
@@ -16,9 +20,7 @@ const Contact = () => {
         method: "POST",
         body: formData,
       });
-      
       userDetails.reset();
-
   }
 
 
@@ -107,14 +109,11 @@ const Contact = () => {
                   width="100%"
                 ></textarea>
               </div>
-              <button id="send"  type="submit" className="main-btn mt-4">
+              <button   type="submit" className="main-btn mt-4">
                 Submit
               </button>
-
-              
-
-             
-            </Form>
+                         </Form>
+              <div id="demo"></div>
 
             
 
