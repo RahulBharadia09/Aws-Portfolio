@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="bg2 section">
+    <div className="bg2 section" id="about">
       <div className="container py-4">
         <div className="text-center pb-2" style={{ color: "#5E5D5F" }}>
           <h2>About Me</h2>
@@ -29,7 +29,7 @@ const About = () => {
           <div className="col-7">
             <div className="fontcolor">
               <p>
-                HTML, CSS, JAVASCRIPT, BOOTSTRAP, REACTJS, MongoDB, React-Icon.
+              ReactJs,Python,Django,AWS,Javascript,HTML,CSS,Bootstrap,Tailwind,Postgresql,SQL,GitHub,React-Native
               </p>
             </div>
           </div>
@@ -57,6 +57,9 @@ const About = () => {
             <div className="fontcolor">
               <Link className="intern" to="/"><p>
                 Envision Training Institute, Pune
+              </p></Link>
+              <Link className="intern" to="/"><p>
+                Brudite Private Limited, Jaipur
               </p></Link>
             </div>
           </div>

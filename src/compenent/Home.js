@@ -2,6 +2,9 @@ import React from "react";
 import rahul2 from "../Images/WhatsApp Image 2023-07-29 at 5.01.56 PM.jpeg";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -20,13 +23,19 @@ const Home = () => {
             </div>
             <div>
               <p style={{ color: "#B4BECC" }}>
-                
-                <span>HTML5 |</span> <span>CSS |</span>
+                <span>ReactJs |</span>
+                <span> Python |</span>
+                <span> Django |</span>
+                <span> AWS |</span>
                 <span> Javascript |</span>
+                <span> HTML |</span>
+                <span> CSS |</span>
                 <span> Bootstrap |</span>
-                <span> React.js |</span>
-                <span> React-Icon |</span>
-                <span> GitHub </span>
+                <span> Tailwind |</span>
+                <span> Postgresql |</span>
+                <span> SQL |</span>
+                <span> GitHub |</span>
+                <span> React-Native </span>
               </p>
             </div>
 
@@ -50,6 +59,9 @@ const Home = () => {
               height="100%"
             />
           </div>
+          <About />
+          <Projects />
+          <Contact />
         </div>
       </Container>
     </div>

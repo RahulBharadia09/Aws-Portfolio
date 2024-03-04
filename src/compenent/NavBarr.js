@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
