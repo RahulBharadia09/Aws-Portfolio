@@ -7,6 +7,7 @@ import Contact from "./compenent/Contact";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Layout from "./compenent/Layout";
 
+
 function App() {
   return (
     <>
@@ -25,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+

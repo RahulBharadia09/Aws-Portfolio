@@ -38,7 +38,7 @@ const page5 = () => {
 
           <Link
             className="btn btn-link btn-floating btn-lg text-white m-1"
-            to="https://www.linkedin.com/in/dkte-rahulbharadia/"
+            to="https://www.linkedin.com/in/rahulbharadia/"
             target="-blank_"
             role="button"
             data-mdb-ripple-color="dark"

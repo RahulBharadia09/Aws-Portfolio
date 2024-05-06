@@ -1,46 +1,51 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
+  const form = useRef();
 
-
+  const sendEmail = () => {
+    emailjs
+      .sendForm("service_8jlrpzl", "template_2f746nm", form.current, {
+        publicKey: "t_Vbk4suHxNfxsaX7",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   function Submit(e) {
-    
     const userDetails = document.querySelector("form");
     e.preventDefault();
+    sendEmail();
     const formData = new FormData(userDetails);
     fetch(
       "https://script.google.com/macros/s/AKfycby1fPfJxLRl3DZrBzmk1MAuxw7pxmkqsz0WEtEhQoY-XUfs5COEWkhd6SUbFR_TzMwKsw/exec",
       {
         method: "POST",
         body: formData,
-      });
-      userDetails.reset();
+      }
+    );
+    userDetails.reset();
   }
 
-
-
-  
- 
-
-
-
-
   return (
-
-    
-    <div className="bg2 section">
+    <div  className="bg2 section">
       <div className="container">
         <div
           className="row justify-content-evenly contactform "
           style={{ color: "#5E5D5F" }}
         >
-          <div className="col-sm-12 col-lg-5 order-2 order-lg-1 pe-lg-5 text-lg-start text-md-center text-center">
+          <div  className="col-sm-12 col-lg-5 order-2 order-lg-1 pe-lg-5 text-lg-start text-md-center text-center">
             <span className="subtitle text-center" style={{ color: "#5E5D5F" }}>
               Contact Me
             </span>
@@ -61,6 +66,7 @@ const Contact = () => {
             </div>
 
             <Form
+            ref={form}
               method="POST"
               className="form contactform"
               onSubmit={(e) => Submit(e)}
@@ -73,6 +79,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
+                  autoComplete="on"
                   className="form-control border-top-0 border-end-0 border-start-0"
                 />
               </div>
@@ -109,14 +116,11 @@ const Contact = () => {
                   width="100%"
                 ></textarea>
               </div>
-              <button   type="submit" className="main-btn mt-4">
+              <button  type="submit" value="Send" className="main-btn mt-4">
                 Submit
               </button>
-                         </Form>
-              <div id="demo"></div>
-
-            
-
+            </Form>
+            <div id="demo"></div>
           </div>
 
           <div className="map col-sm-12 col-lg-5 order-1 mb-4 order-lg-1 mb-lg-0">

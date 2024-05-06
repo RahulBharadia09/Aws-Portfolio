@@ -1,69 +1,132 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="bg2 section" id="about">
+    <div className="bg2 section">
       <div className="container py-4">
         <div className="text-center pb-2" style={{ color: "#5E5D5F" }}>
           <h2>About Me</h2>
         </div>
-        <div className="row pt-5 justify-content-center ">
-          <div className="col-4 fontcolor">
-            <h3>About Me</h3>
-          </div>
-          <div className="col-7 fontcolor">
+        <div className="row pt-2 justify-content-center ">
+          
+          <div className="col-10 text-center  fontcolor">
             <p>
-              Strong in design and integration with intuitive problem-solving
-              skills. Proficient in HTML5, CSS, JAVASCRIPT, Bootstrap , ReactJs
-              and SQL.Looking to start the career as an entry-level software
-              engineer with a reputed firm driven by technology.
+              <span style={{ color: "#FF014F", fontWeight: "600" }}>
+                Tech-Enthusiast 
+              </span> with a can-do attitude aims to use my well-honed skills to develop
+              state-of-the-art scalable software solutions. Always curious to
+              solve problems.
+              <br />
+              
             </p>
           </div>
         </div>
 
-        <div className="row pt-5 justify-content-center">
+        <div className="row gap-4 pt-5  justify-content-between">
           <div className="col-4 fontcolor">
-            <h3>My Skills</h3>
+            <h4>Programming Languages</h4>
           </div>
           <div className="col-7">
             <div className="fontcolor">
               <p>
-              ReactJs,Python,Django,AWS,Javascript,HTML,CSS,Bootstrap,Tailwind,Postgresql,SQL,GitHub,React-Native
+              HTML,CSS,JavaScript, Python 
               </p>
             </div>
           </div>
         </div>
 
-        <div className="row pt-5 justify-content-center">
-          <div className="col-4 mx-1 fontcolor">
-            <h3>Education</h3>
-          </div>
-          <div className="col-7 fontcolor">
-            <p>2016-17 [ SSC ] [ Shri Balaji Public School Takawade ]</p>
-            <p>2018-19 [ HSC ] [ Kishoor Career Point Ichalkaranji ]</p>
-            <p>
-              2019-2023 [ B.Tech ] [ Computer Science & Engineering ][ DKTE Society's Textile and Engineering Institute,
-              Ichalkaranji ]
-            </p>
-          </div>
-        </div>
-
-        <div className="row pt-5 justify-content-center">
+        
+        <div className="row gap-4 pt-5 justify-content-between">
           <div className="col-4 fontcolor">
-            <h3>Internship</h3>
+            <h4>Framework</h4>
           </div>
           <div className="col-7">
             <div className="fontcolor">
-              <Link className="intern" to="/"><p>
-                Envision Training Institute, Pune
-              </p></Link>
-              <Link className="intern" to="/"><p>
-                Brudite Private Limited, Jaipur
-              </p></Link>
+              <p>
+              Tailwind, Bootstrap, Django.
+              </p>
             </div>
           </div>
         </div>
+
+        <div className="row gap-4 pt-5 justify-content-between">
+          <div className="col-4 fontcolor">
+            <h4>Cloud Technologies & Tools:</h4>
+          </div>
+          <div className="col-7">
+            <div className="fontcolor">
+              <p>
+              Amazon web services(AWS).
+
+
+
+
+              {/* 3D Coarousal */}
+              {/* https://www.figma.com/file/hklG066lw3hf7s1PR5QIDr/Figma-basics?type=design&node-id=657%3A2&mode=design&t=uq14mZN0Ct6xY8VP-1 */}
+
+              {/* Ola bike */}
+              {/* https://www.figma.com/proto/hklG066lw3hf7s1PR5QIDr/Figma-basics?type=design&node-id=655-72&t=7i3QhPuEu0oFD3V2-0&scaling=scale-down&page-id=655%3A71 */}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="row gap-4 pt-5 justify-content-between">
+          <div className="col-4 fontcolor">
+            <h4>Version Control System :</h4>
+          </div>
+          <div className="col-7">
+            <div className="fontcolor">
+              <p>
+              Git, GitHub.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="row gap-4 pt-5 justify-content-between">
+          <div className="col-4 fontcolor">
+            <h4>Database:</h4>
+          </div>
+          <div className="col-7">
+            <div className="fontcolor">
+              <p>
+              PostgreSQL, MySQL. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="row gap-4 pt-5 justify-content-between">
+          <div className="col-4 fontcolor">
+            <h4>Devops:</h4>
+          </div>
+          <div className="col-7">
+            <div className="fontcolor">
+              <p>
+              CI/CD, Jenkins. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="row gap-4 pt-5 justify-content-between">
+          <div className="col-4 fontcolor">
+            <h4>Story Tracking:</h4>
+          </div>
+          <div className="col-7">
+            <div className="fontcolor">
+              <p>
+              Jira 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        
       </div>
     </div>
   );

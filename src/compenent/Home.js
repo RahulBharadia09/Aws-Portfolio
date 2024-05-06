@@ -6,19 +6,17 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
+
 const Home = () => {
   return (
-    <div className="bg2 py-3">
+    <div className="bg2 py-10 ">
       <Container>
         <div className="row justify-content-center align-items-center section">
-          <div className="col-12 col-lg-8 text-center  ">
-            <div className=" top-margin align-items-center">
-              <h4 style={{ color: "#B4BECC" }}>Welcome to my world</h4>
-            </div>
-            <div>
+          <div className="col-12  col-lg-8 text-center">
+            <div className="mlll " >
               <h1 style={{ fontSize: "62px", color: "white" }}>
-                Hii I'm{" "}
-                <span style={{ color: "#FF014F" }}>Rahul Bharadia </span>{" "}
+                <span className="word" >Hii I'm</span>
+                 <span className="word"   style={{ color: "#FF014F" }}> Rahul Bharadia </span>
               </h1>
             </div>
             <div>
@@ -28,14 +26,11 @@ const Home = () => {
                 <span> Django |</span>
                 <span> AWS |</span>
                 <span> Javascript |</span>
-                <span> HTML |</span>
-                <span> CSS |</span>
-                <span> Bootstrap |</span>
                 <span> Tailwind |</span>
-                <span> Postgresql |</span>
                 <span> SQL |</span>
                 <span> GitHub |</span>
-                <span> React-Native </span>
+                <span> Docker |</span>
+                <span> Jenkins </span>
               </p>
             </div>
 
@@ -50,11 +45,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-sm-12 col-lg-4  b21 ">
+          <div  className="col-sm-12 col-lg-4  b21 ">
             <img
               src={rahul2}
               alt="Rahul_Bharadia"
-              className=" homeimg img-fluid"
+              className=" homeimg img-fluid "
               width="100%"
               height="100%"
             />
