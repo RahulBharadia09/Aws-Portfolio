@@ -5,60 +5,29 @@ import {
   AiFillGithub,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import SocialMedia from "./SocialMedia";
 
 const page5 = () => {
   return (
     <div className="bg2">
       <div className="container">
         <div className="text-center text-white ">
-          <Link
-            className="btn btn-link btn-floating btn-lg text-white m-1"
-            to="https://www.instagram.com/_the_commrade_/"
-            role="button"
-            target="-blank_"
-            data-mdb-ripple-color="dark"
-          >
-            <i>
-              <AiOutlineInstagram />
-            </i>
-          </Link>
-
-          <Link
-            className="btn btn-link btn-floating btn-lg text-white m-1"
-            to="https://wa.me/919172185204/?"
-            target="-blank_"
-            role="button"
-            data-mdb-ripple-color="dark"
-          >
-            <i>
-              <AiOutlineWhatsApp/>
-            </i>
-          </Link>
-
-          <Link
-            className="btn btn-link btn-floating btn-lg text-white m-1"
-            to="https://www.linkedin.com/in/rahulbharadia/"
-            target="-blank_"
-            role="button"
-            data-mdb-ripple-color="dark"
-          >
-            <i>
-              <AiFillLinkedin />
-            </i>
-          </Link>
-
-          <Link
-            className="btn btn-link btn-floating btn-lg text-white m-1"
-            to="https://github.com/RahulBharadia09"
-            role="button"
-            target="-blank_"
-            data-mdb-ripple-color="dark"
-          >
-            <i>
-              <AiFillGithub />
-            </i>
-          </Link>
+          <SocialMedia
+            mediaLink="https://www.instagram.com/_the_commrade_/"
+            icon={AiOutlineInstagram}
+          />
+          <SocialMedia
+            mediaLink="https://wa.me/919172185204/?"
+            icon={AiOutlineWhatsApp}
+          />
+          <SocialMedia
+            mediaLink="https://www.linkedin.com/in/rahulbharadia/"
+            icon={AiFillLinkedin}
+          />
+          <SocialMedia
+            mediaLink="https://github.com/RahulBharadia09"
+            icon={AiFillGithub}
+          />
         </div>
 
         <div className="text-center text-white bg2">
