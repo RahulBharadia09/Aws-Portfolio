@@ -1,4 +1,5 @@
 import React from "react";
+import AboutDesc from "./AboutDesc";
 
 const About = () => {
   return (
@@ -8,125 +9,32 @@ const About = () => {
           <h2>About Me</h2>
         </div>
         <div className="row pt-2 justify-content-center ">
-          
           <div className="col-10 text-center  fontcolor">
             <p>
               <span style={{ color: "#FF014F", fontWeight: "600" }}>
-                Tech-Enthusiast 
-              </span> with a can-do attitude aims to use my well-honed skills to develop
+                Tech-Enthusiast
+              </span>
+              with a can-do attitude aims to use my well-honed skills to develop
               state-of-the-art scalable software solutions. Always curious to
               solve problems.
               <br />
-              
             </p>
           </div>
         </div>
 
-        <div className="row gap-4 pt-5  justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Programming Languages</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              HTML,CSS,JavaScript, Python 
-              </p>
-            </div>
-          </div>
-        </div>
-
-        
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Framework</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              Tailwind, Bootstrap, Django.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Cloud Technologies & Tools:</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              Amazon web services(AWS).
-
-
-
-
-              {/* 3D Coarousal */}
-              {/* https://www.figma.com/file/hklG066lw3hf7s1PR5QIDr/Figma-basics?type=design&node-id=657%3A2&mode=design&t=uq14mZN0Ct6xY8VP-1 */}
-
-              {/* Ola bike */}
-              {/* https://www.figma.com/proto/hklG066lw3hf7s1PR5QIDr/Figma-basics?type=design&node-id=655-72&t=7i3QhPuEu0oFD3V2-0&scaling=scale-down&page-id=655%3A71 */}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Version Control System :</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              Git, GitHub.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Database:</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              PostgreSQL, MySQL. 
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Devops:</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              CI/CD, Jenkins. 
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row gap-4 pt-5 justify-content-between">
-          <div className="col-4 fontcolor">
-            <h4>Story Tracking:</h4>
-          </div>
-          <div className="col-7">
-            <div className="fontcolor">
-              <p>
-              Jira 
-              </p>
-            </div>
-          </div>
-        </div>
-
-        
-        
+        <AboutDesc
+          title="Programming Languages"
+          tech="HTML,CSS,JavaScript, Python "
+        />
+        <AboutDesc title="Framework" tech="Tailwind, Bootstrap, Django." />
+        <AboutDesc
+          title="Cloud Technologies & Tools"
+          tech="Amazon web services(AWS) "
+        />
+        <AboutDesc title="Version Control System" tech="Git " />
+        <AboutDesc title="Database" tech="PostgreSQL, SQL. " />
+        <AboutDesc title="Devops" tech="CI/CD, Jenkins" />
+        <AboutDesc title="Story Tracking" tech="Jira" />
       </div>
     </div>
   );
