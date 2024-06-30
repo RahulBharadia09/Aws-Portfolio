@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="text-center pb-3" style={{ color: "#5E5D5F" }}>
           <h2>Figma Projects</h2>
         </div>
-        <div className="row justify-content-evenly ">
+        <div className="row gap-2 justify-content-evenly ">
           <Cards
             imgAlt="3d-carousal"
             imgName={img1}

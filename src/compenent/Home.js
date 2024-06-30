@@ -25,18 +25,20 @@ const Home = () => {
                 <span> Python |</span>
                 <span> Django |</span>
                 <span> AWS |</span>
+                <span> Rest Api |</span>
                 <span> Javascript |</span>
                 <span> Tailwind |</span>
                 <span> SQL |</span>
                 <span> GitHub |</span>
                 <span> Docker |</span>
-                <span> Jenkins </span>
+                <span> Jenkins |</span>
+                <span> Figma </span>
               </p>
             </div>
 
             <div className="mt-4 pb-4">
               <Link
-                to="/Resume/Rahul_Bharadia.pdf"
+                to="/Resume/Rahul Bharadia Resume.pdf"
                 target="_blank_"
                 className="main-btn"
               >

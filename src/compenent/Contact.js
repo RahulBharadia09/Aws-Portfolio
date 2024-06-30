@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-
 const Contact = () => {
   const form = useRef();
 
@@ -39,16 +38,16 @@ const Contact = () => {
   }
 
   return (
-    <div  className="bg2 section">
+    <div className="bg2 section">
       <div className="container">
         <div
           className="row justify-content-evenly contactform "
           style={{ color: "#5E5D5F" }}
         >
-          <div  className="col-sm-12 col-lg-5 order-2 order-lg-1 pe-lg-5 text-lg-start text-md-center text-center">
-            <span className="subtitle text-center" style={{ color: "#5E5D5F" }}>
+          <div className="col-sm-12 col-lg-5 order-2 order-lg-1 pe-lg-5 text-lg-start text-md-center text-center">
+            {/* <span className="subtitle text-center" style={{ color: "#5E5D5F" }}>
               Contact Me
-            </span>
+            </span> */}
             <h2>Hire me</h2>
             <div className="row call-details mb-4">
               <label className="col-sm-3 col-lg-4"> Call Directly</label>
@@ -60,13 +59,13 @@ const Contact = () => {
               <label className="col-sm-3 col-lg-4">Contact Email :</label>
               <div className="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
                 <Link to="mailto:rahulbharadia917@gmail.com">
-                  rahulbharadia917@gmail.com
+                  rahulbharadia1@gmail.com
                 </Link>
               </div>
             </div>
 
             <Form
-            ref={form}
+              ref={form}
               method="POST"
               className="form contactform"
               onSubmit={(e) => Submit(e)}
@@ -116,20 +115,20 @@ const Contact = () => {
                   width="100%"
                 ></textarea>
               </div>
-              <button  type="submit" value="Send" className="main-btn mt-4">
+              <button type="submit" value="Send" className="main-btn mt-4">
                 Submit
               </button>
             </Form>
             <div id="demo"></div>
           </div>
-
-          <div className="map col-sm-12 col-lg-5 order-1 mb-4 order-lg-1 mb-lg-0">
+          <div className="col-sm-12 col-lg-5 order-1 mb-4 order-lg-1 mb-lg-0">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61143.22453664123!2d74.42902501051852!3d16.704307403674793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0e265ba450af7%3A0x671b0ba88c556c2!2sIchalkaranji%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1642575864751!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61143.22359308635!2d74.4640446!3d16.70431035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0e265ba450af7%3A0x671b0ba88c556c2!2sIchalkaranji%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1719724519129!5m2!1sen!2sin"
               title="Gmap"
               loading="lazy"
-            ></iframe>
+            />
           </div>
+
         </div>
       </div>
     </div>
